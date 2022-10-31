@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ChatBot</title>
+    <link rel="stylesheet" href="C:\Users\dhanu\Desktop\NALAIYA THIRAN\Assigments\Assignment_3\style.css">
+  </head>
+  <body>
+    <center>
+      <h2 style="color: white">INVENTORY MANAGEMENT SYSTEM FOR RETAILERS</h2>
+    </center>
+    <div class="bg">
+
+    </div>
+    <script>
+      window.watsonAssistantChatOptions = {
+      integrationID: "e57f92e1-b7ed-4a0d-beba-a6888b680000", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "cd017af6-02d9-4676-86ee-9b83b0b31374", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+      });
+    </script>
+  </body>
+</html>
