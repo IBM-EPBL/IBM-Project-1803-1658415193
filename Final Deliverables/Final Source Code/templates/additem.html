@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="{{url_for('static', filename='simple.css')}}" />
+    <title>Add Items</title>
+  </head>
+  <body>
+    <div class="header">
+      <a href="/"><img class="margin"src="{{url_for('static', filename='logo.webp')}}"></a>
+    </div>
+    <div class="login-wrapper">
+      <form action="{{ url_for('additem')}}" class="form" method="POST">
+        <h2>Add items</h2>
+        <div class="input-group">
+            <input type="number" name="pcode" id="loginUser" required />
+            <label for="pcode">Product Code</label>
+          </div>
+        <div class="input-group">
+          <input type="text" name="pname" id="loginUser" required />
+          <label for="pname">Product Name</label>
+        </div>
+        <div class="input-group">
+          <input type="number" name="price" id="loginUser" required />
+          <label for="price">Price</label>
+        </div>
+        <div class="input-group">
+          <input type="number" name="stock" id="loginPassword" required/>
+          <label for="stock">Stocks</label>
+        </div>
+        <div class="break">
+            <br>
+        </div>
+        <input type="submit" value="ADD" class="submit-btn" />
+      </form>
+    </div>
+  </body>
+</html>

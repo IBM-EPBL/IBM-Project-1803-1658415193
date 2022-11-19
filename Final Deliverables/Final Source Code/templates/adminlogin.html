@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Log in as a Admin</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='simple.css')}}">
+    </head>
+    <body>
+      <div class="header">
+        <a href="/"><img class="margin"src="{{url_for('static', filename='logo.webp')}}"></a>
+      </div>
+    <div class="login-wrapper">
+        <form action="{{ url_for('adminlogin') }}" class="form" method="POST">
+          <h2>Log in as a Admin</h2>
+          <div class="flex"><p>Log in as Admin then </p> <p class="gap"></p><a class="link" href="/login">CLICK HERE</a></div>
+          <br><br>
+          <div class="input-group">
+            <input type="email" name="adloginUser" id="loginUser" required />
+            <label for="adloginUser">Email</label>
+          </div>
+          <div class="input-group">
+            <input type="password" name="adloginPassword" id="loginPassword" required/>
+            <label for="adloginPassword">Password</label>
+          </div>
+          <a class="forgot" href="#">Forgot Password?</a>
+          <div class="break">
+              <br>
+          </div>
+          <input type="submit" value="Login" class="submit-btn" />
+          <div class="break">
+              <br>
+          </div>
+          <div class="flex">
+              <p>Not a Member? Then</p>
+              <p class="space"></p>
+              <a class="Sign-up" href="/adsignup">Sign up as a Admin</a>
+          </div>
+        </form>
+      </div>     
+
+
+       
+</body>
+</html>

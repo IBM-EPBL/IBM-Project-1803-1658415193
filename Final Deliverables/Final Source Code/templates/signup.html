@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="{{url_for('static', filename='simple.css')}}" />
+    <title>Sign up as a Customer</title>
+  </head>
+  <body>
+    <div class="header">
+      <a href="/"><img class="margin"src="{{url_for('static', filename='Logo.webp')}}"></a>
+    </div>
+    <div class="login-wrapper">
+      <form action="{{ url_for('regsignup')}}" class="form" method="POST">
+        <h2>Sign up as a Customer</h2>
+        <div class="flex"><p>Log in as Admin then </p> <p class="gap"></p><a class="link" href="/adsignup">Click here</a></div>
+        <br><br>
+        <div class="input-group">
+          <input type="text" name="username" id="loginUser" required />
+          <label for="username">Name</label>
+        </div>
+        <div class="input-group">
+          <input type="email" name="loginUser" id="loginUser" required />
+          <label for="loginUser">Email</label>
+        </div>
+        <div class="input-group">
+          <input type="password" name="loginPassword" id="loginPassword" required/>
+          <label for="loginPassword">Password</label>
+        </div>
+        <div class="input-group">
+            <input type="password" name="confirmPassword" id="loginPassword" required/>
+            <label for="loginPassword"> Confirm Password</label>
+        </div>
+        <div class="break">
+            <br>
+        </div>
+        <input type="submit" value="Sign Up " class="submit-btn" />
+        <div class="break">
+            <br>
+        </div>
+        <div class="flex">
+            <p>Already a Member? Then</p>
+            <p class="space"></p>
+            <a class="Sign-up" href="/login">Log in as a Customer</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

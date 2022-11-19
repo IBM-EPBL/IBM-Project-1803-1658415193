@@ -1,0 +1,33 @@
+body{
+    background-image: url("final.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+.header{
+    display: flex; 
+    padding-left: 10px;
+    padding-top: 10px;
+    
+}
+.space{
+    padding-left: 1150px;
+}
+.title{
+    font-size: 65px;
+    padding-left: 10px;
+}
+.title1{
+    font-size: 40px;
+    padding-left: 10px;
+}
+.about , .about1 , .about2 , .about3{
+    font-size: 25px;
+} 
+.margin{
+    margin-left: 20px;
+}
+.cart_icon , .acc_icon{
+    width: 60px;
+    height: 60px;
+}
